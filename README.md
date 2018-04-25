@@ -1,5 +1,6 @@
 # CSD_code
-convert a pure decimals to a binary CSD code
+convert a pure decimals to a binary CSD code . 
+
 output is like this:
 
 0.001 = +2^(-10) +2^(-15) -2^(-17)
