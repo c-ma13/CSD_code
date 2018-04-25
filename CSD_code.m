@@ -1,11 +1,12 @@
 %CSD code for pure decimals
 %both decimals and integers must be processed from lower bits to higher bits
+
 clear; clc;
 input=[0.001,-0.003,0.035];
-%ÊäÈë±ØĞëÔÚ¡¾-1£¬1¡¿Õâ¸öÇø¼äÄÚ,²»ÄÜÎª0
+%input must be in [-1ï¼Œ1], and do not be 0
 format compact
 format short
-N=21;%Êä³öÈıÎ»£¬¾«È·¶È20Î»»ù±¾ÉÏ¹»ÁË
+N=21;%output three csd units
 
 for i = 1:length(input)
     t=input(i);
@@ -36,7 +37,7 @@ for i = 1:length(input)
         unit=-unit;
     end
     %unit
-    %Êä³ö±ÈÌØÎ»ÒÔ¹©²Î¿¼
+    %output units for reference
     position=[];
     for j=1:N
         if unit(j)~=0
